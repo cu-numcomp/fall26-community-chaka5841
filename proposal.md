@@ -1,40 +1,39 @@
 # Community Software Analysis Proposal
 Please edit this file and push to your repository.
 
-## Software: *NAME_OF_PACKAGE_HERE*
+## Software: AvaFrame
 
-*Write a paragraph describing what the software does and who its
-primary audience is.*
+AvaFrame is an opensource framework from the Austrian Avalanche and Torrent Service and the Austrian Research Centre for Forests. It takes in terrain and a relesase point and maps the viscosity and pressure. The main solver, com1DFA, solves thickness-averaged mass and momentum balance equations. It’s a particle-mesh hybrid using smoothed particle hydrodynamics. In time, it uses operator splitting, adding one effect at a time each step.
 
 ### Stats
 
 | Description | Your answer |
 |---------|-----------|
-| Repository URL |    |
-| Main/documentation website |    |
-| Year project was started |   |
-| Number of contributors in the past year | `git shortlog -se --since=2025-11-01` may be useful |
-| Number of contributors in the lifetime of the project |   |
-| Number of distinct affiliations | 1, 2-5, 5-10, >10 |
-| Where do development discussions take place? | e.g., GitHub/GitLab issues, mailing list, Slack, etc.  |
-| Typical number of emails/comments per week? |   |
-| Typical number of commits per week? |  |
-| Typical commit size | `git log --shortstat` may be useful |
-| How does the project accept contributions? | e.g., pull requests, patches on mailing lists   |
-| Does the project have an automated test suite? | yes/no |
-| Does the project use continuous integration? | yes/no |
-| Does the project have an AI contribution policy? | link |
-| Are any legal/licensing steps required to contribute? | no or explain below |
+| Repository URL | https://github.com/avaframe/AvaFrame |
+| Main/documentation website | https://avaframe.org (docs: https://docs.avaframe.org) |
+| Year project was started | 2020 (first commit June 29, 2020) |
+| Number of contributors in the past year | 13|
+| Number of contributors in the lifetime of the project | 30 |
+| Number of distinct affiliations | 5-10 (AvaFrame core team, BFW Austrian Research Centre for Forests, Tyrol state government, Austrian torrent/avalanche control, ENSTA Paris, plus independents) |
+| Where do development discussions take place? | GitHub issues and pull requests |
+| Typical number of emails/comments per week? | About 10 |
+| Typical number of commits per week? | 4ish |
+| Typical commit size | 16 lines|
+| How does the project accept contributions? | Pull requests on GitHub to master, using feature branches; PRs must complete a required checklist |
+| Does the project have an automated test suite? | Yes (pytest suite in avaframe/tests, plus standard benchmark tests) |
+| Does the project use continuous integration? | Yes. GitHub Actions runs the tests on every push and PR to master, enforces the PR checklist, and builds/uploads to PyPI |
+| Does the project have an AI contribution policy? | Yes. You are supposed to record the AI contribution 1-10 for every PR |
+| Are any legal/licensing steps required to contribute? | No CLA. The project is licensed under EUPL v1.2, so contributions fall under that license |
 
 ### Install and run
 
 Check the following boxes when complete or add a note below if you
 encountered a problem.
 
-- [ ] I have installed the software
-- [ ] I have run at least one example
-- [ ] I have run the test suite
-- [ ] The test suite passes
+- [ x] I have installed the software
+- [ x] I have run at least one example
+- [x ] I have run the test suite
+- [ x] The test suite passes
 
 ### Notes/concerns/risks
 
